@@ -23,7 +23,7 @@ namespace nxttr
             int f = 1;
             for(int p = 2; p <= n; p++)
             {
-                f += p;
+                f *= p;
             }
             label1.Text = f.ToString();
         }
