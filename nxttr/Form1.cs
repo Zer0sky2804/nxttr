@@ -16,5 +16,16 @@ namespace nxttr
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int n = int.Parse(textBox1.Text);
+            int f = 1;
+            for(int p = 2; p <= n; p++)
+            {
+                f += p;
+            }
+            label1.Text = f.ToString();
+        }
     }
 }
